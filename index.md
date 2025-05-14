@@ -2,122 +2,50 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Alan Wong's Projects
 
-[Link to another page](./another-page.html).
+Welcome! Here are some of my main projects in deep learning and data analysis.
 
-There should be whitespace between paragraphs.
+---
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+## [Unsupervised Action Segmentation and Scene Understanding in Diverse Instructional Videos](https://github.com/alan-wkm/NTUFYP2025)
 
-# Header 1
+Efficiently navigating long instructional videos is challenging. This project introduces an **unsupervised approach** for segmenting actions and understanding scenes, leveraging both audio and visual cues.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+- **Key Features:**
 
-## Header 2
+  - Automatic segmentation of instructional videos into meaningful chapters-no manual annotation required
+  - Multimodal analysis using visual scene changes and audio transcriptions
+  - Integration with Google Gemini API for enhanced segmentation
+  - Flask web application for easy video uploads and structured, chapter-based insights
+  - Outputs structured JSON with titles, timestamps, descriptions, and transcriptions
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+- **Results:**
+  Achieved ~90% accuracy in action segmentation, improving navigation efficiency in instructional content.
 
-### Header 3
+- **Tech Stack:**
+  Python, PyTorch, OpenCV, PySceneDetect, Faster Whisper, Flask, Google Gemini API
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+---
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+## [SC4001 NNDL 2025 - Individual Assignment](https://github.com/alan-wkm/SC4001_NNDL_2025_IndivAsg)
 
-#### Header 4
+This assignment comprises two deep learning components:
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+- **Music Genre Classification**
 
-##### Header 5
+  - Designed and trained a deep neural network (DNN) for classifying music recordings from the GTZAN dataset
+  - Explored optimal batch sizes, hidden neuron configurations, and used SHAP for feature importance analysis
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+- **HDB Resale Price Regression**
 
-###### Header 6
+  - Built a tabular deep learning model to predict Singapore HDB resale prices
+  - Addressed feature drift and model degradation using Alibi Detect
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+- **Tech Stack:**
+  Python, PyTorch, PyTorch Tabular, Pandas, Scikit-learn, Alibi Detect
 
-### There's a horizontal rule below this.
+---
 
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+For more details, please visit each project's GitHub repository.
+Feel free to reach out for collaboration or questions!
