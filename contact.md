@@ -1,1 +1,1 @@
-Attempting somehting new!
+Attempting something new!
