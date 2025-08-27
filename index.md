@@ -1,51 +1,51 @@
----
-layout: default
----
+# Alan Wong — Portfolio
 
-# Alan Wong's Projects
+👋 Hi, I’m Alan!  
+I’m a Computing Science graduate passionate about building **scalable backend systems, AI-powered applications, and cloud-native software**.
 
-Welcome! Here are some of my main projects in deep learning and data analysis.
-
----
-
-## [Unsupervised Action Segmentation and Scene Understanding in Diverse Instructional Videos](https://github.com/alan-wkm/NTUFYP2025)
-
-Efficiently navigating long instructional videos is challenging. This project introduces an **unsupervised approach** for segmenting actions and understanding scenes, leveraging both audio and visual cues.
-
-- **Key Features:**
-
-  - Automatic segmentation of instructional videos into meaningful chapters-no manual annotation required
-  - Multimodal analysis using visual scene changes and audio transcriptions
-  - Integration with Google Gemini API for enhanced segmentation
-  - Flask web application for easy video uploads and structured, chapter-based insights
-  - Outputs structured JSON with titles, timestamps, descriptions, and transcriptions
-
-- **Results:**
-  Achieved ~90% accuracy in action segmentation, improving navigation efficiency in instructional content.
-
-- **Tech Stack:**
-  Python, PyTorch, OpenCV, PySceneDetect, Faster Whisper, Flask, Google Gemini API
+🔹 Skilled in Python, Java, SQL, Flask, React, Docker, and AWS.  
+🔹 Experienced in deep learning, backend development, and data engineering.  
+🔹 Currently seeking software engineering opportunities.
 
 ---
 
-## [SC4001 NNDL 2025 - Individual Assignment](https://github.com/alan-wkm/SC4001_NNDL_2025_IndivAsg)
+## Featured Projects
 
-This assignment comprises two deep learning components:
+### [Unsupervised Action Segmentation in Instructional Videos](link)
 
-- **Music Genre Classification**
+_Flask app + AI-powered video understanding_
 
-  - Designed and trained a deep neural network (DNN) for classifying music recordings from the GTZAN dataset
-  - Explored optimal batch sizes, hidden neuron configurations, and used SHAP for feature importance analysis
-
-- **HDB Resale Price Regression**
-
-  - Built a tabular deep learning model to predict Singapore HDB resale prices
-  - Addressed feature drift and model degradation using Alibi Detect
-
-- **Tech Stack:**
-  Python, PyTorch, PyTorch Tabular, Pandas, Scikit-learn, Alibi Detect
+- Built an unsupervised video segmentation pipeline (audio + visual)
+- Engineered a web app for video uploads & structured chapter outputs
+- Integrated Google Gemini API for semantic labeling
+- **Tech:** Python, Flask, PyTorch, Whisper, Gemini API, OpenCV
 
 ---
 
-For more details, please visit each project's GitHub repository.
-Feel free to reach out for collaboration or questions!
+### [Music Genre Classification & HDB Resale Prediction](link)
+
+_Deep learning applied to audio + tabular data_
+
+- Designed DNNs for classification & regression tasks
+- Applied SHAP for interpretability & Alibi Detect for drift detection
+- **Tech:** Python, PyTorch, Pandas, Scikit-learn
+
+---
+
+### [Full-Stack Project / System Project] (add this soon)
+
+---
+
+## Skills
+
+- **Languages:** Python, Java, SQL, JavaScript
+- **Frameworks:** Flask, FastAPI, React, PyTorch
+- **Cloud & DevOps:** AWS, Docker, Kubernetes, GitHub Actions
+- **Databases:** PostgreSQL, MongoDB
+
+---
+
+## Contact
+
+📧 alan@email.com  
+🔗 [LinkedIn](link) | [GitHub](link)
