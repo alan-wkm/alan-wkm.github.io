@@ -134,8 +134,8 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/alan-wkm"
-    - label: "Leetcode"
-      icon: "fab fa-fw fa-laptop-code"
+    - label: "Leetcode!"
+      icon: "fab fa-fw fa-code"
       url: "https://leetcode.com/u/alan_wkm/"
 
 # # Site Footer
