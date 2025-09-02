@@ -1,4 +1,200 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">YourName</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Hi, I'm <span class="accent">Your Name</span></h1>
+            <p>
+                I'm a [Your Profession] passionate about [your interests]. I create
+                meaningful digital experiences through clean code and thoughtful
+                design.
+            </p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container about-grid">
+            <div>
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    Hello! I'm [Your Name], a [Your Profession] with [X] years of
+                    experience specializing in [your specialties].
+                </p>
+                <p>
+                    My journey in tech started when [your story]. Since then, I've
+                    worked on various projects ranging from [project types] to [other
+                    project types].
+                </p>
+            </div>
+            <div>
+                <img src="https://placehold.co/400x500" alt="Your Name" class="about-img" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-alt">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://placehold.co/400x300" alt="Project 1" class="project-img" />
+                    <div class="project-content">
+                        <h3>Project Name 1</h3>
+                        <p>Short description of the project and your role in it.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://placehold.co/400x300" alt="Project 2" class="project-img" />
+                    <div class="project-content">
+                        <h3>Project Name 2</h3>
+                        <p>Short description of the project and your role in it.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML/CSS</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-database"></i> Databases</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Other</h3>
+                    <ul>
+                        <li><i class="fas fa-paint-brush"></i> UI/UX</li>
+                        <li><i class="fas fa-cogs"></i> DevOps</li>
+                        <li><i class="fas fa-tasks"></i> Project Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="bg-alt">
+        <div class="container">
+            <h2 class="section-title">Events & Participation</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Hackathon 2023</h3>
+                    <p>Won first place in the AI category</p>
+                    <span>June 2023</span>
+                </div>
+                <div class="timeline-item">
+                    <h3>Tech Conference</h3>
+                    <p>Speaker on "The Future of Web Development"</p>
+                    <span>April 2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <h3>AWS Certified Developer</h3>
+                    <p>Amazon Web Services</p>
+                    <span>2023</span>
+                </div>
+                <div class="cert-card">
+                    <h3>Google UX Design Certificate</h3>
+                    <p>Google</p>
+                    <span>2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-alt">
+        <div class="container contact-form">
+            <h2 class="section-title">Get In Touch</h2>
+            <form>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
