@@ -293,3 +293,32 @@ footer {
         display: block;
     }
 }
+
+/* Dark Mode Class Override */
+.dark-mode {
+    --primary: #f8f9fa;
+    --secondary: #3498db;
+    --background: #1a1a1a;
+    --background-alt: #2c2c2c;
+    --text: #e0e0e0;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--text);
+    margin-right: 1rem;
+    transition: transform 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+}
