@@ -257,17 +257,34 @@ section {
 
 /* ========== FOOTER ========== */
 footer {
-    background: var(--primary);
-    color: white;
+    background: var(--secondary);
+    /* ✅ use accent color */
+    color: #ffffff;
+    /* ✅ readable text */
     text-align: center;
     padding: 2rem 0;
 }
 
+footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    /* ✅ slightly softer text */
+}
+
 .social-links a {
-    color: white;
+    color: #ffffff;
+    /* ✅ icons are white */
     margin: 0 10px;
     font-size: 1.5rem;
+    transition: color 0.3s;
 }
+
+.social-links a:hover {
+    color: var(--primary);
+    /* ✅ contrast hover effect */
+}
+
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
@@ -322,4 +339,16 @@ footer {
 .nav-actions {
     display: flex;
     align-items: center;
+}
+
+/* ========== SCROLL ANIMATIONS ========== */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
