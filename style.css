@@ -352,3 +352,21 @@ footer p {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Publication link inside projects */
+.project-content .publication {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.project-content .publication a {
+    color: var(--secondary);
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.project-content .publication a:hover {
+    color: var(--primary);
+}
