@@ -39,5 +39,34 @@ function revealOnScroll() {
     });
 }
 
+// Event image toggle
+document.querySelectorAll(".event-card").forEach((card) => {
+    const images = card.querySelectorAll(".event-images img");
+    const buttons = card.querySelectorAll(".image-toggle button");
+
+    buttons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            images.forEach(img => img.classList.remove("active"));
+            buttons.forEach(b => b.classList.remove("active"));
+            images[index].classList.add("active");
+            btn.classList.add("active");
+        });
+    });
+});
+
+// Carousel navigation
+const carousel = document.querySelector(".events-carousel");
+const prevBtn = document.querySelector(".carousel-btn.prev");
+const nextBtn = document.querySelector(".carousel-btn.next");
+
+prevBtn.addEventListener("click", () => {
+    carousel.scrollBy({ left: -320, behavior: "smooth" });
+});
+nextBtn.addEventListener("click", () => {
+    carousel.scrollBy({ left: 320, behavior: "smooth" });
+});
+
+
+
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);

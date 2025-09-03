@@ -468,3 +468,112 @@ footer p {
     color: var(--secondary);
     /* accent highlight on hover */
 }
+
+/* Events Carousel */
+.events-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    scrollbar-width: none;
+}
+
+.events-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.event-card {
+    flex: 0 0 300px;
+    background: var(--background);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.event-images {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.event-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.event-images img.active {
+    display: block;
+}
+
+.event-card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.event-card p {
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+/* Image toggle buttons */
+.image-toggle {
+    margin-top: 0.5rem;
+}
+
+.image-toggle button {
+    background: transparent;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.image-toggle button.active,
+.image-toggle button:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+/* Carousel Navigation Arrows */
+.carousel-btn {
+    background: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background: var(--primary);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
