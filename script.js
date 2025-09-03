@@ -54,17 +54,29 @@ document.querySelectorAll(".event-card").forEach((card) => {
     });
 });
 
-// Carousel navigation
+// Carousel navigation with snap-to-center
 const carousel = document.querySelector(".events-carousel");
 const prevBtn = document.querySelector(".carousel-btn.prev");
 const nextBtn = document.querySelector(".carousel-btn.next");
 
-prevBtn.addEventListener("click", () => {
-    carousel.scrollBy({ left: -320, behavior: "smooth" });
-});
-nextBtn.addEventListener("click", () => {
-    carousel.scrollBy({ left: 320, behavior: "smooth" });
-});
+function getCardWidth() {
+    const card = carousel.querySelector(".event-card");
+    return card ? card.offsetWidth + 24 : 320; // card width + gap (1.5rem = 24px)
+}
+
+function scrollToCard(direction) {
+    const cardWidth = getCardWidth();
+    const currentScroll = carousel.scrollLeft;
+    const newScroll = currentScroll + (direction * cardWidth);
+
+    carousel.scrollTo({
+        left: newScroll,
+        behavior: "smooth"
+    });
+}
+
+prevBtn.addEventListener("click", () => scrollToCard(-1));
+nextBtn.addEventListener("click", () => scrollToCard(1));
 
 
 
