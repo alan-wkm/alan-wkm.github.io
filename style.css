@@ -241,38 +241,117 @@ section {
 }
 
 /* ========== CERTIFICATIONS ========== */
+/* Certifications Section */
 .certs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
 .cert-card {
-    background: var(--background-alt);
-    padding: 1.5rem;
+    background: var(--background);
+    padding: 2rem 1.5rem;
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+.cert-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 1rem auto;
+}
+
+.cert-card h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.cert-card p {
+    margin: 0.2rem 0;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+/* Credential link styled like publication link */
+.cert-link {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.cert-link a {
+    color: var(--text);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.cert-link a:hover {
+    color: var(--secondary);
+}
+
+.cert-link i {
+    margin-right: 6px;
+    color: var(--secondary);
+}
+
+
 /* ========== CONTACT ========== */
+/* Contact Form */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
+    background: var(--background);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     font-family: inherit;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--secondary);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
 .contact-form button {
     width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
+
 
 /* ========== FOOTER ========== */
 footer {
