@@ -179,8 +179,14 @@ section {
 /* Project Grid & Card Layout */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
     gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
 }
 
 .project-card {
@@ -199,8 +205,8 @@ section {
 
 .project-img {
     width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+    aspect-ratio: 16 / 9;   /* standard widescreen ratio */
+    object-fit: cover;      /* zoom/crop to fill */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
